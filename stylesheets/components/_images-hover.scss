@@ -1,0 +1,57 @@
+.images-hover {
+
+  &:hover {
+    .text-show-none {
+      display: block;
+    }
+  }
+}
+
+.text-show-none {
+  display: none;
+}
+
+.img-hover {
+  a {
+    color: $black;
+  }
+
+  &:hover {
+    .img-show {
+      display: block;
+    }
+
+    .img-hidden {
+      display: none;
+    }
+
+    a {
+      color: $yellow;
+    }
+  }
+}
+
+.img-show {
+  display: none;
+}
+
+
+.btn2png {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+
+    &:hover {
+      display: none;
+
+      +.btnpng {
+        display: block;
+      }
+    }
+  }
+}
+
+.btnpng {
+  display: none;
+}

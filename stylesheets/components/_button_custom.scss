@@ -1,0 +1,30 @@
+
+// 在 Sass 中，自訂高可用性的元件
+// .btn-hover-custom-yellow {
+//   background-color: white;
+//   border-color: black;
+
+//   &:hover {
+//     background-color: $custom-yellow;
+//     border-color: $custom-yellow;
+//   }
+// }
+
+// 使用 Bootstrap 方法，產生獨立元件，使用mixin
+.btn-hover-custom-yellow {
+  @include button-variant(white, black);
+
+  &:hover {
+    @include button-variant($custom-yellow, $custom-yellow);
+  }
+}
+
+
+.btn-shadow-custom-yellow {
+  @include button-variant($custom-yellow, $custom-yellow);
+
+  &:hover {
+    @include button-variant($custom-yellow, $custom-yellow);
+    box-shadow: 0 2px 0 0 black; // [水平偏移量] [垂直偏移量] [模糊半徑] [擴展半徑] [顏色]
+  }
+}

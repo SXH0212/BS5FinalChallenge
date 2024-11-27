@@ -1,0 +1,15 @@
+.sidebar-link {
+  @media (min-width: 992px) {
+
+    // 僅在 lg 以上生效
+    &:hover {
+      color: $custom-yellow;
+
+      &:before {
+        content: "-";
+        color: $custom-yellow;
+        margin-right: 13px;
+      }
+    }
+  }
+}

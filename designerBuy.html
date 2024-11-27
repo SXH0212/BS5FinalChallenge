@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="BS5FinalChallenge">
+  <meta name="keywords" content="BS5FinalChallenge">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="./index.html">
+  <meta name="twitter:creator" content="聖翔">
+  <meta name="twitter:title" content="BS5FinalChallenge">
+  <meta name="twitter:description" content="BS5FinalChallenge">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>設計作品-服務購買</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top">
+    <div class="container">
+      <a href="index.html"><img src="images/logo.png" alt="logopng"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-3" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="serve.html">服務介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="designer.html">設計作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="adotion.html">領養專區</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-shadow-custom-yellow rounded-pill px-5" href="designerBuy.html">毛孩似顏繪</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main style="background-image: url(images/lightpaperfibers.png);" class="pb-5">
+    <section class="container border-top border-custom-yellow border-3 border-lg-0 py-3 mb-4">
+      <img src="images/banner.png" alt="bannerpng" class="img-fluid d-none d-lg-block">
+      <img src="images/banner_service-sm.png" alt="bannerpng" class="img-fluid d-lg-none">
+    </section>
+
+    <section class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="#"
+            class="row mx-2 py-4 bg-white g-3 rounded-4 border-top border-custom-yellow border-5 shadow-sm">
+            <h3 class="deco-line fw-bold fs-1 text-center my-5">填寫訂購資訊</h3>
+            <div class="col-12 col-lg-6">
+              <label for="inputName" class="form-label fs-5">名字</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="inputName2" class="form-label fs-5">姓氏</label>
+              <input type="text" class="form-control" id="inputName2">
+            </div>
+            <div class="col-12">
+              <label for="inputPhone" class="form-label fs-5">手機號碼</label>
+              <input type="tel" class="form-control" id="inputPhone" placeholder="0999-999-999">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label fs-5">電子郵件</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label fs-5">收件地址</label>
+              <select id="inputAddress" class="form-select mb-1">
+                <option selected>請選擇城市</option>
+                <option>苗栗縣</option>
+                <option>新竹市</option>
+              </select>
+              <select class="form-select mb-1">
+                <option selected>請選擇區域</option>
+                <option>頭份市</option>
+                <option>竹南鎮</option>
+              </select>
+              <input type="text" class="form-control" id="" placeholder="請輸入詳細地址">
+            </div>
+            <div class="col-12">
+              <label for="inputStyle" class="form-label fs-5">選擇設計師風格</label>
+              <select id="inputStyle" class="form-select">
+                <option selected>Meili</option>
+                <option>Zoe</option>
+                <option>Michael</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="inputPayment" class="form-label fs-5">付款方式</label>
+              <select id="inputPayment" class="form-select">
+                <option selected>貨到付款</option>
+                <option>LINE</option>
+                <option>信用卡</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label fs-5">加購服務</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="clean">
+                  <label class="form-check-label" for="inlineCheckbox1">送禮用包裝+100</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="massage">
+                  <label class="form-check-label" for="inlineCheckbox2">無框畫+250</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="formTextarea" class="form-label fs-5">備註說明</label>
+              <textarea class="form-control" id="formTextarea" rows="3"></textarea>
+            </div>
+            <p class="noto-sans fs-2 fw-bold text-center">總金額 NT$ 300</p>
+            <div class="col-12 text-center">
+              <button type="submit"
+                class="btn rounded-pill py-1 px-5 bg-custom-yellow border-custom-yellow fs-2">送出訂購資訊</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top border-custom-yellow border-3">
+    <section class="container p-5">
+      <div class="row align-items-center justify-content-center text-center text-lg-start gy-5">
+        <div class="col-lg-2">
+          <img src="images/link01.png" class="img-fluid" alt="link01png">
+        </div>
+        <div class="col-lg-3">
+          <h3 class="noto-sans">加入奴才團隊</h3>
+          <p class="noto-sans">我也會畫畫，希望能盡一份心力！</p>
+          <a href="designerBuy.html"
+            class="btn btn-outline-black rounded-pill px-5 py-2 btn-hover-custom-yellow">聯絡我們</a>
+        </div>
+        <div class="col-lg-2">
+          <img src="images/link02@2x.png" class="img-fluid" alt="link02png">
+        </div>
+        <div class="col-lg-3">
+          <h3 class="noto-sans">加入奴才團隊</h3>
+          <p class="noto-sans">我也會畫畫，希望能盡一份心力！</p>
+          <a href="adotion.html" class="btn btn-outline-black rounded-pill px-5 py-2 btn-hover-custom-yellow">領養專區</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-3 bg-gray text-white noto-sans text-center">
+      <h6 class="m-0 py-2 fs-7 h6">
+        Copyright © 2021 撿到寶.All rights reserved.
+      </h6>
+    </section>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
