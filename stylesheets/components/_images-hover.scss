@@ -15,19 +15,19 @@
   a {
     color: $black;
   }
+}
 
-  &:hover {
-    .img-show {
-      display: block;
-    }
+.img-hover:hover {
+  .img-show {
+    display: block;
+  }
 
-    .img-hidden {
-      display: none;
-    }
+  .img-hidden {
+    display: none;
+  }
 
-    a {
-      color: $yellow;
-    }
+  a {
+    color: $yellow;
   }
 }
 
